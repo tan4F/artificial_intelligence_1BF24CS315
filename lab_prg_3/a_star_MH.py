@@ -1,6 +1,6 @@
 import heapq
 
-GOAL = (1, 2, 3, 4, 5, 6, 7, 8, 0)
+GOAL = (1, 2, 3, 8, 0, 4, 7, 6, 5)
 MOVES = [(-1, 0), (1, 0), (0, -1), (0, 1)]  
 
 def manhattan_distance(state):
@@ -66,5 +66,5 @@ def solve_puzzle(start_state):
         print("No solution found.")
 
 if __name__ == "__main__":
-    initial_state = (1, 2, 3, 4, 5, 0, 7, 8, 6)
+    initial_state = (2, 8, 3, 1, 6, 4, 0, 7, 5)
     solve_puzzle(initial_state)
